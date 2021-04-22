@@ -1,0 +1,201 @@
+<ion-header class="head-localidades">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <div class="cont-img">
+        <img src="assets/imagenes/logosolo.png" id="imglogo" alt="" routerLink="/inicio" routerDirection="root">
+      </div>
+    </ion-buttons>
+    <div class="cont-datos">
+      <p>DESARROLLANDO DESDE 2006</p>
+    </div>
+    <!-- <div class="cont-datos">
+      <div class="datos">
+        <p class="head">Creciendo juntos, trabajando en equipo</p>
+        <div class="line"></div>
+      </div>
+      <div class="cont-items" slot="end">
+        <p>
+          <span *ngFor="let item of servdatos.arrMenu ; let i = index" (click)="servdatos.clickitem(item)">
+            <ion-icon name="person" *ngIf="item.nombre === 'Usuarios'">
+            </ion-icon>
+            <ion-icon name="logo-whatsapp" *ngIf="item.nombre === 'Escribinos'">
+            </ion-icon>{{item.nombre}}
+          </span>
+        </p>
+      </div>
+    </div> -->
+    <ion-buttons slot="end">
+      <ion-menu-button>
+        <ion-icon ios="grid-outline" md="grid-sharp"></ion-icon>
+      </ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content id="cont" #cont>
+  <section class="body-slide">
+
+    <div class="contimg">
+      <div class="img" id="imghoriz">
+        <div style="width: 100%; text-align: center;">
+          <div class="cont-texto">
+            <div class="texto">
+              <div class="cont-text">
+                <h1 class="titulo">Adquirí tu departamento en pozo financiado en pesos!</h1>
+              </div>
+              <div class="cont-text">
+                <h2 class="subtitulo">
+                  Contamos con diferentes planes, entre ellos, nuestro <strong>PLAN RURAL</strong>
+                  para que puedas acceder a la inversión con grandes facilidades.
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div class="cont-btn">
+            <ion-button color="light" fill="outline" (click)="scrollTo('cardformu')">
+              QUIERO RECIBIR MÁS INFORMACIÓN
+            </ion-button>
+          </div>
+        </div>
+      </div>
+      <div class="img" id="imgvert">
+        <div style="width: 100%; text-align: center;">
+          <div class="cont-texto">
+            <div class="texto">
+              <div class="cont-text">
+                <h1 class="titulo">Adquirí tu departamento en pozo financiado en pesos!</h1>
+              </div>
+              <div class="cont-text">
+                <h2 class="subtitulo">
+                  Contamos con diferentes planes, entre ellos, nuestro <strong>PLAN RURAL</strong>
+                  para que puedas acceder a la inversión con grandes facilidades.
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div class="cont-btn">
+            <ion-button color="light" fill="outline" (click)="scrollTo('cardformu')">
+              QUIERO RECIBIR MÁS INFORMACIÓN
+            </ion-button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="cont-form">
+    <div class="head">
+      <h1 class="titulo">ESTAMOS EN MÁS DE 20 CIUDADES DE CÓRDOBA Y SANTA FÉ.</h1>
+      <!-- <p class="subtitulo">No fastidiamos a nuestros clientes, enviamos información por pedido concreto a modo de
+        mensaje.</p> -->
+    </div>
+    <div class="cont-tarjeta">
+
+      <div class="tarjeta" id="cardformu">
+        <div class="cont-mapa">
+          <!-- <img src="https://grupofonte.com.ar/servidorAR/Imagenes/inversiones/mapa.jpg" alt=""> -->
+        </div>
+        <div class="cont-img">
+            <img src="https://grupofonte.com.ar/servidorAR/Imagenes/inversiones/mapa.jpg" alt="">
+        </div>
+        <div class="body-tarjeta">
+          <div class="headform">
+            <h1>
+              Completá el formulario y recibí asesoramiento e
+              información personalizada según tu capacidad de inversión.
+            </h1>
+          </div>
+          <form [formGroup]="formulario" class="form" novalidate>
+            <ion-item lines="none">
+              <!-- <ion-label>Nombre completo</ion-label> -->
+              <ion-input placeholder="NOMBRE COMPLETO" formControlName="nombre"></ion-input>
+            </ion-item>
+            <ViewCity bnduso="inversion" (cityselect)="cityselect($event)"></ViewCity>
+            <ion-item lines="none">
+              <!-- <ion-label>Mail</ion-label> -->
+              <ion-input placeholder="E-MAIL" formControlName="email"></ion-input>
+            </ion-item>
+            <ion-item lines="none">
+              <!-- <ion-label>Whatsapp</ion-label> -->
+              <ion-input placeholder="WHATSAPP" formControlName="telefono"></ion-input>
+            </ion-item>
+            <ion-item lines="none">
+              <!-- <ion-label>Interés</ion-label> -->
+              <ion-select placeholder="¿En qué te gustaría invertir?" formControlName="interes" cancelText="Cancelar"
+                okText="Confirmar">
+                <ion-select-option value="Departamentos">Departamentos</ion-select-option>
+                <ion-select-option value="Locales">Locales</ion-select-option>
+                <ion-select-option value="Cocheras">Cocheras</ion-select-option>
+                <ion-select-option value="Locales/Dptos.">Locales/Dptos.</ion-select-option>
+              </ion-select>
+            </ion-item>
+            <ion-item class="input" lines="none">
+              <ion-textarea placeholder="INFORMACION ADICIONAL" formControlName="descripcion"></ion-textarea>
+            </ion-item>
+
+
+            <ion-item style="height: 68.4px; display: grid; justify-content: center; align-items: center;" lines="none">
+              <ion-button (click)="enviar()" [disabled]="!formulario.valid">Consultá</ion-button>
+            </ion-item>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <div class="centrar">
+      <div class="chatea" (click)="this.fab.activated = !this.fab.activated">
+        <div class="circulo"></div>
+        <h1 class="text">CHATEÁ CON NOSOTROS</h1>
+        <div class="linea"></div>
+      </div>
+      <div class="conoce">
+        <ion-button color="dark" fill="outline" routerLink="/inicio">
+          CONOCÉ MÁS DE NUESTRA EMPRESA
+        </ion-button>
+      </div>
+      <div class="foot-text">
+        <p>Casa central <br>
+        México 61 - Villa María / Cba. <br>
+        3534 23-2708
+      </p>
+      </div>
+    </div>
+  </div>
+
+  <ion-fab vertical="bottom" horizontal="start" slot="fixed" #ionfab>
+    <ion-fab-button class="whatsapp-btn">
+      <ion-icon name="logo-whatsapp"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top" (click)="stopfab($event)">
+      <div class="chat-contenedor" id="contchat">
+        <div class="head-chat">
+          <div class="contlogo">
+            <img src="assets/imagenes/logosolo.png">
+          </div>
+          <p>GRUPO FONTE</p>
+        </div>
+        <div class="message-wrap" id="contwrap">
+          <div class="message" [class.left]="bndclass">
+            <div class="msg-detail">
+              <div class="msg-info">
+                <p>{{fechadehoy}}</p>
+              </div>
+              <div class="msg-content">
+                <p class="line-breaker ">¡Bienvenido! ¿Como podemos ayudarte? 😃😃</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footerchat">
+          <div class="input-wrap">
+            <textarea #chat_input placeholder="Ingrese su mensaje"></textarea>
+            <ion-button fill="clear" (click)="servdatos.golink('whatsappmsg', msg)">
+              <ion-icon name="send-outline"></ion-icon>
+            </ion-button>
+          </div>
+        </div>
+      </div>
+    </ion-fab-list>
+  </ion-fab>
+</ion-content>

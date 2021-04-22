@@ -1,0 +1,414 @@
+.cont-datos {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+ion-menu-button {
+  display: block;
+}
+section.body-slide {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  margin: 0px 0px 0px 0px;
+
+  .cont-texto {
+    // position: absolute;
+    // bottom: 22%;
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    .texto {
+      background-color: #000000c2;
+      max-width: 460px;
+      width: 95%;
+      color: white;
+      padding: 0px 6px;
+      font-weight: 500;
+      border-radius: 2px;
+      justify-content: center;
+      display: grid;
+
+      .cont-text {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      .titulo {
+        margin: 26px 0px 16px 0px;
+        font-size: 22px;
+        font-weight: bold;
+        max-width: 350px;
+      }
+      .subtitulo {
+        margin: 0px 0 26px 0%;
+        font-size: 16px;
+        text-align: center;
+        font-weight: 450;
+        max-width: 310px;
+      }
+    }
+  }
+  .cont-btn {
+    padding: 8px 0px;
+
+    ion-button {
+      --border-radius: 1px;
+      // border: 2px solid white;
+      font-weight: bold;
+      height: 42px;
+      background-color: #000000c2;
+    }
+  }
+  .contimg {
+    // img {
+    //   min-height: 100%;
+    //   min-width: 100%;
+    // }
+    width: 100%;
+    height: 100%;
+    .img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+  #imgvert {
+    display: none;
+    background: url(https://grupofonte.com.ar/servidorAR/Imagenes/inversiones/vertical.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+  }
+  #imghoriz {
+    display: block;
+    background: url(https://grupofonte.com.ar/servidorAR/Imagenes/inversiones/horiz.jpg);
+    background-size: contain;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  // ion-slides {
+  //   --bullet-background: white;
+  //   --bullet-background-active: black;
+  //   height: 100%;
+  // }
+  // ion-slide {
+  //   .cont-img {
+  //     overflow: hidden;
+  //     width: 100%;
+  //     height: 100%;
+  //     // .image {
+  //     //   display: block;
+  //     //   width: 100%;
+  //     //   height: 100%;
+  //     //   background-position: center right 100%;
+  //     //   background-size: cover;
+  //     //   // object-fit: cover;
+  //     //   // object-position: left;
+  //     //   // transform: translateX(0%);
+  //     //   // animation: move 5s forwards .2s;
+  //     // }
+  //     .uno {
+  //       position: absolute;
+  //       top: 0;
+  //       left: 0;
+  //       transition: all 0.5s;
+  //       object-fit: fill;
+  //       height: 100%;
+  //       width: 100%;
+  //       object-position: 97%;
+  //       z-index: 1000000;
+  //     }
+  //   }
+  // }
+}
+
+.cont-form {
+  //   background: var(--ion-color-primary);
+  padding: 0px 0px 0px 0px;
+  border-radius: 0px 0px 10px 10px;
+  // display: flex;
+  // justify-content: center;
+  // background: var(--ion-color-primary);
+  .head {
+    display: flex;
+    justify-content: center;
+    .titulo {
+      text-align: center;
+      font-size: 22px;
+      width: 100%;
+      background: transparent;
+      font-weight: bold;
+      max-width: 440px;
+      margin: 24px 0px;
+    }
+  }
+  .cont-tarjeta {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    // display: grid;
+    // justify-content: center;
+  }
+  .tarjeta {
+    display: flex;
+    max-width: 1030px;
+    width: 95%;
+    .cont-mapa {
+      width: 100%;
+      /* height: 100%; */
+      display: block;
+      background: url(https://grupofonte.com.ar/servidorAR/Imagenes/inversiones/mapa.jpg);
+      background-size: contain;
+      background-attachment: initial;
+    }
+  }
+  .body-tarjeta {
+    width: 55%;
+    max-width: 430px;
+    border: 3px solid black;
+
+    .headform {
+      display: flex;
+      justify-content: center;
+      h1 {
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        width: 85%;
+      }
+    }
+  }
+  form {
+    ion-item {
+      --background: transparent;
+    }
+    ion-input,
+    ion-select,
+    ion-textarea {
+      --placeholder-font-weight: bold;
+      --placeholder-opacity: 1;
+    }
+    ion-label {
+      display: contents;
+      font-size: 12px;
+      letter-spacing: 1px;
+      font-weight: 540;
+      text-transform: uppercase;
+    }
+    ion-select {
+      display: contents;
+      // text-align: right;
+      font-size: 15px;
+      text-transform: uppercase;
+      color: black;
+      font-weight: bold;
+    }
+    .contenido1,
+    .contenido2 {
+      width: 100%;
+    }
+    // .contenido1 {
+    //   .input {
+    //     display: flex;
+    //     align-items: center;
+    //   }
+    // }
+  }
+}
+
+.full-cont-nosotros {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  // padding: 64px 0px;
+  padding-bottom: 16px;
+  .cont-nosotros {
+    width: 100%;
+    max-width: 640px;
+    ion-card {
+      // --background: #0000006b;
+      padding: 20px 0px;
+    }
+    .cont-body {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      .textbody {
+        width: 90%;
+        max-width: 443px;
+        text-align: center;
+        //   color: white;
+        margin: 4% 0px;
+      }
+    }
+    .contbtn {
+      text-align: right;
+      ion-button {
+        --background: transparent;
+        color: var(--ion-color-primary);
+        // --box-shadow: 0 3px 1px -2px rgba(255, 255, 255, 0.336),
+        //   0 2px 2px 0 rgba(255, 255, 255, 0.247),
+        //   0 1px 5px 0 rgba(255, 255, 255, 0.336);
+        font-weight: 550;
+        margin-right: 7%;
+        font-size: 12px;
+      }
+    }
+  }
+}
+.conthead {
+  // background-image: url(https://grupofonte.com.ar/servidorAR/Imagenes/uruguay/contenedoruy.jpg);
+  // background-position: center left 87%;
+  // background-size: cover;
+  text-align: center;
+  position: relative;
+  // right: 3.6%;
+  // bottom: 15px;
+  p {
+    //   color: white;
+    color: var(--ion-color-primary);
+    font-weight: 550;
+    padding: 14px 0px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 20px;
+    margin: 0;
+  }
+}
+
+.foot {
+  display: flex;
+  justify-content: center;
+  padding-top: 32px;
+
+  .centrar {
+    text-align: center;
+    .chatea {
+      cursor: pointer;
+      .circulo {
+        border: 3px solid black;
+        height: 50px;
+        width: 50px;
+        border-radius: 100%;
+        display: inline-grid;
+      }
+      .text {
+        font-size: 22px;
+        font-weight: bold;
+      }
+      .linea {
+        height: 3px;
+        width: 50%;
+        background-color: black;
+        display: inline-grid;
+      }
+    }
+
+    .conoce {
+      ion-button {
+        margin: 32px 0px;
+        font-weight: bold;
+        --border-radius: 1px;
+        height: 52px;
+        font-size: 23px;
+      }
+    }
+  }
+}
+.cont-img {
+  display: none;
+}
+@media screen and (max-width: 990px) {
+  ion-slide {
+    .cont-img {
+      .uno {
+        object-fit: cover !important;
+      }
+    }
+  }
+}
+@media screen and (max-width: 840px) {
+  .tarjeta {
+    display: block !important;
+    width: 100% !important;
+    .cont-mapa {
+      display: none !important;
+    }
+    .cont-img {
+      display: block !important;
+    }
+    .body-tarjeta {
+      width: 100% !important;
+      max-width: fit-content !important;
+      position: relative;
+      top: -4px;
+    }
+  }
+  .conoce {
+    ion-button {
+      font-size: 18px !important;
+      white-space: break-spaces;
+      width: 95% !important;
+    }
+  }
+
+  .foot {
+    border-bottom: 3px solid black;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+  
+    position: relative;
+    top: -4px;
+  }
+}
+// @media screen and (max-width: 600px) {
+//   #imgvert {
+//     display: block !important;
+//   }
+//   #imghoriz {
+//     display: none !important;
+//   }
+// }
+@media screen and (max-width: 600px) {
+  .cont-tarjeta {
+    display: block !important;
+
+    .head {
+      padding: 16px 0px;
+    }
+  }
+  form {
+    display: block !important;
+  }
+  #imgvert {
+    display: flex !important;
+  }
+  #imghoriz {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  .head .titulo {
+    font-size: 16px !important;
+  }
+
+  .cont-datos {
+    font-size: 16px !important;
+  }
+
+  .conoce {
+    ion-button {
+      font-size: 16px !important;
+    }
+  }
+  .chatea {
+    .text {
+      font-size: 18px;
+    }
+  }
+}

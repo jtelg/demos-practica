@@ -1,0 +1,35 @@
+La idea es que hacer una landing page exactamente igual a esta ( https://grupofonte.com.ar/inversiones ).
+Esta la IMG de modelo.png en la carpeta para guiarse, es un diseño
+super sensillo con dos imagenes, algunos contenedores dentro de las imagenes, botones y el formulario.
+
+La idea es copiar solo el html y css, el js es secundario y mas sencillo, cuando se logre el diseño se vera la logica
+
+en la landing hay 2 imagenes, la primera es esta: (en realidad son 2,
+ una desaparece despues de cierta medida de la pantalla para hacer responsivo al diseño)
+
+ https://grupofonte.com.ar/servidorAR/Imagenes/inversiones/horiz.jpg - imagen horizontal para visualizar desde la pc
+ https://grupofonte.com.ar/servidorAR/Imagenes/inversiones/vertical.jpg - imagen vertical para visualizar desde el cel
+
+la segunda imagen (o tercer) es la que aparece al lado del formulario, que es la siguiente:
+
+https://grupofonte.com.ar/servidorAR/Imagenes/inversiones/mapa.jpg
+
+
+en la carpeta "1- Form inversores" tambien subo la carpeta con el codigo que yo use para hacer esa misma web 
+(dentro de esa carpeta "inversiones - julian" deberias darle bola solo a los archivos .html y .scss)
+( https://grupofonte.com.ar/inversiones ) es esa. Yo uso codigo ionic-angular, tiene botones, cards con css definido 
+del mismo framework pero en caso de no usar ionic o angular, con html y css se puede hacer todo exactamente igual (es la idea).
+
+Si tenes dudas preguntame lo que necesites, la idea es ayudarnos entre nosotros para aprender 
+mas rapido y PARA LLENARNOS DE PLATA
+LLENARNOS DE PLATA LLENARNOS DE PLATA LLENARNOS DE PLATA LLENARNOS DE PLATA LLENARNOS DE PLATA LLENARNOS DE PLATA 
+LLENARNOS DE PLATA LLENARNOS DE PLATA LLENARNOS DE PLATA LLENARNOS DE PLATA LLENARNOS DE PLATA LLENARNOS DE PLATA 
+LLENARNOS DE PLATA LLENARNOS DE PLATA LLENARNOS DE PLATA LLENARNOS DE PLATA LLENARNOS DE PLATA LLENARNOS DE PLATA 
+LLENARNOS DE PLATA LLENARNOS DE PLATA LLENARNOS DE PLATA LLENARNOS DE PLATA LLENARNOS DE PLATA LLENARNOS DE PLATA 
+LLENARNOS DE PLATA LLENARNOS DE PLATA LLENARNOS DE PLATA LLENARNOS DE PLATA LLENARNOS DE PLATA LLENARNOS DE PLATA 
+LLENARNOS DE PLATA LLENARNOS DE PLATA LLENARNOS DE PLATA LLENARNOS DE PLATA LLENARNOS DE PLATA  JAJAJA
+
+
+
+PD: Para volver a subir los archivos al formulario y tener un control de quien lo hizo, crear una carpeta como la de
+"inversiones - julian" con el nombre en referencia de quien lo hizo. SALU2
