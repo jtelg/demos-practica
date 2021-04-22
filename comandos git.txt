@@ -1,0 +1,38 @@
+git clone https://github.com/jtelg/demos-practica.git // "git clone" sirve para clonar un repositorio de trabajo en tu pc
+
+git add . // este comando sirve para agregar todos los archivos que surgieron cambio al repositorio
+
+git commit -m "..mensaje.." // esto le genera el mensaje a todos los archivos añadidos anteriormente con (git add .) 
+				y los guarda para subirlos al repositorio con el siguiente comando push.
+
+git push // con este comando se suben los archivos de la pc al repositorio
+
+TUTORIAL DE YOUTUBE DONDE ESTA TODO EXPLICADO (CLAVE)
+
+https://www.youtube.com/watch?v=3XlZWpLwvvo&ab_channel=Piensa3D
+
+
+
+
+---------------------------------------------------------------------------------------------------------------
+
+para subir una web al repositorio de git hub y que se suba al hosting automaticamente se deben hacer los siguientes pasos:
+
+ir a la pagina de hostinger > avanzado > git generar clave ssh para repositorios privados, copiarla y pegarla en
+github.com/jtelg > settings > SSH and GPG keys
+
+en el repo de git crear un nuevo branch que se llame gh-pages
+
+luego en el proyecto instalar: 
+
+npm i angular-cli-ghpages
+
+los pasos para subir a la web son: 
+ionic build --prod 
+git add .
+git commit -m ""
+npx ngh --dir=www
+
+para incluir el .htaccess es en el angular.json dentro de assets, inclior como: "src/.htaccess"
+
+(todo esto funciona si el repo esta clonado, sino se deben aplicar los comandos para relacionar la carpeta al repositorio)
