@@ -8,22 +8,6 @@
     <div class="cont-datos">
       <p>DESARROLLANDO DESDE 2006</p>
     </div>
-    <!-- <div class="cont-datos">
-      <div class="datos">
-        <p class="head">Creciendo juntos, trabajando en equipo</p>
-        <div class="line"></div>
-      </div>
-      <div class="cont-items" slot="end">
-        <p>
-          <span *ngFor="let item of servdatos.arrMenu ; let i = index" (click)="servdatos.clickitem(item)">
-            <ion-icon name="person" *ngIf="item.nombre === 'Usuarios'">
-            </ion-icon>
-            <ion-icon name="logo-whatsapp" *ngIf="item.nombre === 'Escribinos'">
-            </ion-icon>{{item.nombre}}
-          </span>
-        </p>
-      </div>
-    </div> -->
     <ion-buttons slot="end">
       <ion-menu-button>
         <ion-icon ios="grid-outline" md="grid-sharp"></ion-icon>
@@ -85,15 +69,11 @@
   <div class="cont-form">
     <div class="head">
       <h1 class="titulo">ESTAMOS EN MÁS DE 20 CIUDADES DE CÓRDOBA Y SANTA FÉ.</h1>
-      <!-- <p class="subtitulo">No fastidiamos a nuestros clientes, enviamos información por pedido concreto a modo de
-        mensaje.</p> -->
     </div>
     <div class="cont-tarjeta">
 
       <div class="tarjeta" id="cardformu">
-        <div class="cont-mapa">
-          <!-- <img src="https://grupofonte.com.ar/servidorAR/Imagenes/inversiones/mapa.jpg" alt=""> -->
-        </div>
+        <div class="cont-mapa"></div>
         <div class="cont-img">
             <img src="https://grupofonte.com.ar/servidorAR/Imagenes/inversiones/mapa.jpg" alt="">
         </div>
@@ -106,20 +86,16 @@
           </div>
           <form [formGroup]="formulario" class="form" novalidate>
             <ion-item lines="none">
-              <!-- <ion-label>Nombre completo</ion-label> -->
               <ion-input placeholder="NOMBRE COMPLETO" formControlName="nombre"></ion-input>
             </ion-item>
             <ViewCity bnduso="inversion" (cityselect)="cityselect($event)"></ViewCity>
             <ion-item lines="none">
-              <!-- <ion-label>Mail</ion-label> -->
               <ion-input placeholder="E-MAIL" formControlName="email"></ion-input>
             </ion-item>
             <ion-item lines="none">
-              <!-- <ion-label>Whatsapp</ion-label> -->
               <ion-input placeholder="WHATSAPP" formControlName="telefono"></ion-input>
             </ion-item>
             <ion-item lines="none">
-              <!-- <ion-label>Interés</ion-label> -->
               <ion-select placeholder="¿En qué te gustaría invertir?" formControlName="interes" cancelText="Cancelar"
                 okText="Confirmar">
                 <ion-select-option value="Departamentos">Departamentos</ion-select-option>
